@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Cv from "./pages/Cv";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import RouteNotFound from "./components/Layout/RouteNotFound";
 
 
 
@@ -15,10 +16,11 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="About" element={< About />} />
-        <Route path="Projects" element={<Projects />} />
-        <Route path="Cv" element={<Cv />} />
+        <Route path="about" element={<About />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="cv" element={<Cv />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<RouteNotFound />} />
 
       </Route>
     </Routes>
