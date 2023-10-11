@@ -23,13 +23,14 @@ const ProjectsPage = () => {
       name: "Online Shop",
       logo: "Shop.png",
       description: "Online Shop is an eCom store build with React",
-      githubLink: "https://github.com/project2",
-      deployedLink: "https://project2.com",
+      githubLink:
+        "https://github.com/Ingsy/Javascript-Framework/tree/main/javascript-framework",
+      deployedLink: "https://glowing-quokka-a315eb.netlify.app/",
     },
   ];
 
   return (
-    <div className="projects-page">
+    <div className="text-center m-3">
       <h1>My Projects</h1>
       <div className="projects-list">
         {projects.map((project, index) => (
