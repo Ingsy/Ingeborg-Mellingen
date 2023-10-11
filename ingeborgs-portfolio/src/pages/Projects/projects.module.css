@@ -2,14 +2,18 @@
   border: 1px solid #ddd;
   padding: 20px;
   margin: 10px;
-  background-color: #d28181;
+  background-color: #dff9f9;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
 }
 
-.project img {
-  max-width: 100%;
+.projectImg {
+  max-width: 150px;
+  min-width: 150px;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .projectName {
@@ -20,15 +24,27 @@
 .projectDescription {
   font-size: 1rem;
   color: #333;
+  margin-left: 20px;
+  max-width: 400px;
+}
+.projectInfo {
+  flex: 1;
+  display: grid;
+  grid-template-columns: auto 1fr; /* Adjust column widths as needed */
+}
+
+.middleSection {
+  display: flex;
+  flex-direction: column;
 }
 
 .projectLink {
-  display: inline-block;
+  display: block;
   margin-top: 10px;
   text-decoration: none;
-  color: #0077b5;
+  color: #b906bc;
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .projectLink:hover {
