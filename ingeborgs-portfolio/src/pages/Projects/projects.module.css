@@ -1,0 +1,36 @@
+.project {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  background-color: #d28181;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.projectName {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.projectDescription {
+  font-size: 1rem;
+  color: #333;
+}
+
+.projectLink {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #0077b5;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.projectLink:hover {
+  text-decoration: underline;
+}

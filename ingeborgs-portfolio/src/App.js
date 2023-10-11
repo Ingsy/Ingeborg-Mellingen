@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Cv from "./pages/Cv";
 import Contact from "./pages/Contact";
-import Projects from "./pages/Projects";
+import ProjectPage from "./pages/Projects/projectPage";
 import RouteNotFound from "./components/Layout/RouteNotFound";
 
 
@@ -17,7 +17,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
-        <Route path="projects" element={<Projects />} />
+        <Route path="projects" element={<ProjectPage />} />
         <Route path="cv" element={<Cv />} />
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<RouteNotFound />} />
