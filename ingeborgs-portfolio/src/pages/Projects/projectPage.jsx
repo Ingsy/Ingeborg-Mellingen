@@ -32,7 +32,7 @@ const ProjectsPage = () => {
   return (
     <div className="text-center m-3">
       <h1>My Projects</h1>
-      <div className="projects-list">
+      <div className="d-flex justify-content-center projects-list">
         {projects.map((project, index) => (
           <Project key={index} {...project} />
         ))}

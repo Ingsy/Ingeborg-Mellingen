@@ -5,14 +5,14 @@ import Button from "react-bootstrap/Button";
 
 const Project = ({ logo, name, description, githubLink, deployedLink }) => {
   return (
-    <Card className={`${styles.project} mb-4`}>
+    <Card className={`${styles.project} col-sm-12 mb-4`}>
       <Card.Img variant="top" src={logo} alt={name} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>{description}</Card.Text>
         <div className={styles.middleSection}>
           <Button
-            className="mb-3"
+            className={`${styles.button} mb-3`}
             variant="primary"
             href={githubLink}
             target="_blank"
@@ -21,6 +21,7 @@ const Project = ({ logo, name, description, githubLink, deployedLink }) => {
             GitHub
           </Button>
           <Button
+            className={styles.button2}
             variant="success"
             href={deployedLink}
             target="_blank"

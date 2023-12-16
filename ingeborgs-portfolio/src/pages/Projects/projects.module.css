@@ -6,11 +6,17 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
+  max-width: 500px;
 }
 
 .projectName {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.Img {
+  height: 250px;
+  width: auto;
 }
 
 .projectDescription {
@@ -41,4 +47,16 @@
 
 .projectLink:hover {
   text-decoration: underline;
+}
+
+.button {
+  background-color: #ffb445 !important;
+  color: #fff;
+  border-color: #d83bd6 !important;
+}
+
+.button2 {
+  background-color: #d83bd6 !important;
+  color: #fff;
+  border-color: #ffb445 !important;
 }
