@@ -17,7 +17,7 @@ const ProjectsPage = () => {
       description:
         "BID is an auction website. A registered user may create, view, search and add a bid to other users listings. HTTP methods: POST, GET, PUT, and DELETE to enable CRUD operations. Static host: Build and deployed to github pages",
       githubLink: "https://github.com/Ingsy/ingsy.github.io",
-      deployedLink: "ingsy.github.io/",
+      deployedLink: "https://ingsy.github.io/",
     },
     {
       name: "Online Shop",
