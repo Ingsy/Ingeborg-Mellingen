@@ -4,12 +4,12 @@ import Project from "./index.jsx"; // Import the Project component
 const ProjectsPage = () => {
   const projects = [
     {
-      name: "BeFriendMe",
-      logo: "project1_logo.png",
+      name: "Holidaze",
+      logo: "Holidaze.png",
       description:
-        "BeFriendMe is a social media application. The API routes requires authorisation via JWT (JSON Web Tokens). localStorage is used for storing JWT  HTTP methods: POST, GET, PUT, and DELETE to enable CRUD operations.",
-      githubLink: "https://github.com/project1",
-      deployedLink: "https://project1.com",
+        "Holidaze is a web application designed to provide users with a seamless experience for managing venues and bookings. Whether you're a venue manager or a user looking to book a space, Holidaze offers a user-friendly interface to meet your needs.",
+      githubLink: "https://github.com/Ingsy/Holidaze/tree/master/holidaze",
+      deployedLink: "https://soft-faun-5457e1.netlify.app",
     },
     {
       name: "Auction Site",
@@ -21,7 +21,7 @@ const ProjectsPage = () => {
     },
     {
       name: "Online Shop",
-      logo: "Shop.png",
+      logo: "OnlineShop.png",
       description: "Online Shop is an eCom store build with React",
       githubLink:
         "https://github.com/Ingsy/Javascript-Framework/tree/main/javascript-framework",

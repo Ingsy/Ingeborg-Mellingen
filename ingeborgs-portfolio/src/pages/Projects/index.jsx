@@ -1,33 +1,42 @@
 import React from "react";
-import styles from "./projects.module.css"; // Import a CSS file for styling
+import styles from "./projects.module.css";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
 const Project = ({ logo, name, description, githubLink, deployedLink }) => {
   return (
-    <div className={styles.project}>
-      <img className={styles.projectImg} src={logo} alt={name} />
-      <div className={styles.projectInfo}>
+    <Card className={`${styles.project} mb-4`}>
+      <Card.Img
+        variant="top"
+        src={logo}
+        alt={name}
+        className={styles.projectImg}
+      />
+      <Card.Body>
+        <Card.Title>{name}</Card.Title>
+        <Card.Text>{description}</Card.Text>
         <div className={styles.middleSection}>
-          <h3 className={styles.projectName}>{name}</h3>
-          <a
-            className={styles.projectLink}
+          <Button
+            className="mb-3"
+            variant="primary"
             href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
           >
             GitHub
-          </a>
-          <a
-            className={styles.projectLink}
+          </Button>
+          <Button
+            variant="success"
             href={deployedLink}
             target="_blank"
             rel="noopener noreferrer"
           >
             Deployed
-          </a>
+          </Button>
         </div>
-        <p className={styles.projectDescription}>{description}</p>
-      </div>
-    </div>
+      </Card.Body>
+    </Card>
   );
 };
+
 export default Project;
