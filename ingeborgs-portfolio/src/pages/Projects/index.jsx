@@ -6,12 +6,7 @@ import Button from "react-bootstrap/Button";
 const Project = ({ logo, name, description, githubLink, deployedLink }) => {
   return (
     <Card className={`${styles.project} mb-4`}>
-      <Card.Img
-        variant="top"
-        src={logo}
-        alt={name}
-        className={styles.projectImg}
-      />
+      <Card.Img variant="top" src={logo} alt={name} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>{description}</Card.Text>

@@ -8,14 +8,6 @@
   align-items: center;
 }
 
-.projectImg {
-  max-width: 150px;
-  min-width: 150px;
-  height: auto;
-  margin-bottom: 20px;
-  margin-right: 20px;
-}
-
 .projectName {
   font-size: 1.5rem;
   font-weight: bold;
