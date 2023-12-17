@@ -22,7 +22,8 @@ const ProjectsPage = () => {
     {
       name: "Online Shop",
       logo: "OnlineShop.png",
-      description: "Online Shop is an eCom store build with React",
+      description:
+        "Online Shop is an eCom store build with React. Users can add products to chart, search for items and checkoit each induvidual Product. There is also a contact page with input requirements. Enjoy shopping at Online Shop",
       githubLink:
         "https://github.com/Ingsy/Javascript-Framework/tree/main/javascript-framework",
       deployedLink: "https://glowing-quokka-a315eb.netlify.app/",
