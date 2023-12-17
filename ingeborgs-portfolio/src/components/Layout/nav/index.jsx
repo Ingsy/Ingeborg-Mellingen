@@ -20,11 +20,7 @@ function MyNavbar() {
                 Projects
               </Link>
             </Nav.Item>
-            <Nav.Item>
-              <Link to="/about" className="nav-link">
-                About
-              </Link>
-            </Nav.Item>
+
             <Nav.Item>
               <Link to="/contact" className="nav-link">
                 Contact
