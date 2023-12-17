@@ -1,12 +1,14 @@
 .project {
   border: 1px solid #ddd;
-  padding: 20px;
+  padding: 20px !important;
   margin: 10px;
   background-color: #f2f2f2;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  max-width: 500px;
+  min-width: 400px;
+  height: 700px; /* Adjust the height to your desired fixed height */
 }
 
 .middleSection {
@@ -33,12 +35,14 @@
   background-color: #ffb445 !important;
   color: #fff;
   border-color: #d83bd6 !important;
+  font-weight: bold;
 }
 
 .button2 {
   background-color: #d83bd6 !important;
   color: #fff;
   border-color: #ffb445 !important;
+  font-weight: bold;
 }
 
 .largeTitle {
@@ -49,4 +53,10 @@
 .description {
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.cardImage {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
 }

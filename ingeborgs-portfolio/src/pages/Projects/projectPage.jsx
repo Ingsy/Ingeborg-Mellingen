@@ -31,12 +31,14 @@ const ProjectsPage = () => {
   return (
     <div className="text-center m-3">
       <h1>My Projects</h1>
-      <div className="row justify-content-center">
-        {projects.map((project, index) => (
-          <div key={index} className="col-12 col-md-12 col-lg-4 mb-4">
-            <Project {...project} />
-          </div>
-        ))}
+      <div className="d-flex justify-content-center align-items-center">
+        <div className="row">
+          {projects.map((project, index) => (
+            <div key={index} className="col-12 col-md-12 col-lg-4 mb-4">
+              <Project {...project} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
