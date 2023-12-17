@@ -36,11 +36,6 @@
   font-weight: bold;
 }
 
-.largeTitle {
-  font-size: 35px;
-  margin: 10px;
-}
-
 .description {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -50,7 +45,10 @@
 }
 
 .cardImage {
-  width: 100%;
-  height: 300px;
+  border-radius: 8px;
+  height: auto;
+  max-height: 300px;
+  min-height: 300px;
   object-fit: contain;
+  width: 100%;
 }

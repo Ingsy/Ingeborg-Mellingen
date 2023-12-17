@@ -6,6 +6,9 @@ import styles from "./projects.module.css";
 const Project = ({ logo, name, description, githubLink, deployedLink }) => {
   return (
     <Card className={`${styles.project} mb-4`}>
+      <Card.Title className={`${styles.largeTitle} text-center`}>
+        {name}
+      </Card.Title>
       <Card.Img
         variant="top"
         src={logo}
@@ -13,7 +16,6 @@ const Project = ({ logo, name, description, githubLink, deployedLink }) => {
         className={styles.cardImage}
       />
       <Card.Body>
-        <Card.Title className={styles.largeTitle}>{name}</Card.Title>
         <Card.Text className={styles.description}>{description}</Card.Text>
         <div className={styles.middleSection}>
           <Button
