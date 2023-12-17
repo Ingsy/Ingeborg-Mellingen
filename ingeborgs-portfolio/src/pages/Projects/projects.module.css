@@ -25,15 +25,14 @@
   background-color: #ffb445 !important;
   color: #fff;
   border-color: #d83bd6 !important;
-  font-weight: bold;
-  margin-top: auto;
+  font-weight: bold !important;
 }
 
 .button2 {
   background-color: #d83bd6 !important;
   color: #fff;
   border-color: #ffb445 !important;
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .description {
