@@ -1,31 +1,20 @@
 .project {
   border: 1px solid #ddd;
   padding: 20px !important;
-  margin: 10px;
+  margin: 10px !important;
   background-color: #f2f2f2;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  min-width: 450px;
+  text-align: left;
   max-width: 450px;
-  height: 700px; /* Adjust the height to your desired fixed height */
+  min-height: 730px; /* Adjust the height to your desired fixed height */
 }
 
 .middleSection {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 400px;
-}
-
-.projectLink {
-  display: block;
-  margin-top: 10px;
-  text-decoration: none;
-  color: #b906bc;
-  font-weight: bold;
-  margin-right: 20px;
+  justify-content: flex-end;
 }
 
 .projectLink:hover {
@@ -37,6 +26,7 @@
   color: #fff;
   border-color: #d83bd6 !important;
   font-weight: bold;
+  margin-top: auto;
 }
 
 .button2 {
@@ -54,6 +44,9 @@
 .description {
   margin-top: 15px;
   margin-bottom: 15px;
+  min-height: 180px;
+  max-height: 180px;
+  font-size: 14px;
 }
 
 .cardImage {

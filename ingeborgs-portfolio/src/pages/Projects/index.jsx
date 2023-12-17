@@ -1,22 +1,20 @@
 import React from "react";
-import styles from "./projects.module.css";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import styles from "./projects.module.css";
 
 const Project = ({ logo, name, description, githubLink, deployedLink }) => {
   return (
-    <Card className={`${styles.project} mb-4 d-flex flex-column flex-grow-1`}>
-      <Card.Body className="d-flex flex-column">
+    <Card className={`${styles.project} mb-4`}>
+      <Card.Img
+        variant="top"
+        src={logo}
+        alt={name}
+        className={styles.cardImage}
+      />
+      <Card.Body>
         <Card.Title className={styles.largeTitle}>{name}</Card.Title>
-        <Card.Img
-          variant="top"
-          src={logo}
-          alt={name}
-          className={styles.cardImage}
-        />
-        <Card.Text className={`${styles.description} flex-grow-1`}>
-          {description}
-        </Card.Text>
+        <Card.Text className={styles.description}>{description}</Card.Text>
         <div className={styles.middleSection}>
           <Button
             className={`${styles.button} mb-3`}

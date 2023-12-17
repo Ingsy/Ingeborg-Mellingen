@@ -15,7 +15,7 @@ const ProjectsPage = () => {
       name: "Auction Site",
       logo: "BID.png",
       description:
-        "BID is an auction website. A registered user may create, view, search and add a bid to other users listings. HTTP methods: POST, GET, PUT, and DELETE to enable CRUD operations. Static host: Build and deployed to github pages",
+        "BID is an auction website. A registered user may create, view, search and add a bid to other users listings. HTTP methods: POST, GET, PUT, and DELETE to enable CRUD operations. Static host: Build and deployed to github pages. Good Luck",
       githubLink: "https://github.com/Ingsy/ingsy.github.io",
       deployedLink: "https://ingsy.github.io/",
     },
@@ -23,7 +23,7 @@ const ProjectsPage = () => {
       name: "Online Shop",
       logo: "OnlineShop.png",
       description:
-        "Online Shop is an eCom store build with React. Users can add products to chart, search for items and checkoit each induvidual Product. There is also a contact page with input requirements. Enjoy shopping at Online Shop",
+        "Online Shop is an eCom store build with React. Users can add products to chart, search for items and checkoit each induvidual Product. There is also a contact page with input requirements. Static host: Build and deployed to Netlify.",
       githubLink:
         "https://github.com/Ingsy/Javascript-Framework/tree/main/javascript-framework",
       deployedLink: "https://glowing-quokka-a315eb.netlify.app/",
@@ -35,7 +35,7 @@ const ProjectsPage = () => {
       <div className="d-flex justify-content-center align-items-center">
         <div className="row justify-content-center">
           {projects.map((project, index) => (
-            <div key={index} className="col-md-12 col-lg-4 mb-4">
+            <div key={index} className="col-12 col-md-6 col-lg-4 mb-4">
               <Project {...project} />
             </div>
           ))}
