@@ -32,9 +32,9 @@ const ProjectsPage = () => {
     <div className="text-center m-3">
       <h1>My Projects</h1>
       <div className="d-flex justify-content-center align-items-center">
-        <div className="row">
+        <div className="row justify-content-center">
           {projects.map((project, index) => (
-            <div key={index} className="col-12 col-md-12 col-lg-4 mb-4">
+            <div key={index} className="col-md-12 col-lg-4 mb-4">
               <Project {...project} />
             </div>
           ))}
@@ -43,5 +43,4 @@ const ProjectsPage = () => {
     </div>
   );
 };
-
 export default ProjectsPage;
