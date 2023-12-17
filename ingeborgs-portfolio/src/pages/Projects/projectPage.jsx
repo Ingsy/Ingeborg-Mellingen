@@ -28,13 +28,14 @@ const ProjectsPage = () => {
       deployedLink: "https://glowing-quokka-a315eb.netlify.app/",
     },
   ];
-
   return (
     <div className="text-center m-3">
       <h1>My Projects</h1>
-      <div className="d-flex justify-content-center projects-list">
+      <div className="row justify-content-center">
         {projects.map((project, index) => (
-          <Project key={index} {...project} />
+          <div key={index} className="col-12 col-md-12 col-lg-4 mb-4">
+            <Project {...project} />
+          </div>
         ))}
       </div>
     </div>

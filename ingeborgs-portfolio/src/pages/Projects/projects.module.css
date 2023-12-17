@@ -2,35 +2,18 @@
   border: 1px solid #ddd;
   padding: 20px;
   margin: 10px;
-  background-color: #dff9f9;
+  background-color: #f2f2f2;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   max-width: 500px;
 }
 
-.projectName {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-
-
-.projectDescription {
-  font-size: 1rem;
-  color: #333;
-  margin-left: 20px;
-  max-width: 400px;
-}
-.projectInfo {
-  flex: 1;
-  display: grid;
-  grid-template-columns: auto 1fr; /* Adjust column widths as needed */
-}
-
 .middleSection {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 400px;
 }
 
 .projectLink {
@@ -56,4 +39,14 @@
   background-color: #d83bd6 !important;
   color: #fff;
   border-color: #ffb445 !important;
+}
+
+.largeTitle {
+  font-size: 35px;
+  margin: 10px;
+}
+
+.description {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }

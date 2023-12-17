@@ -5,11 +5,13 @@ import Button from "react-bootstrap/Button";
 
 const Project = ({ logo, name, description, githubLink, deployedLink }) => {
   return (
-    <Card className={`${styles.project} col-sm-12 mb-4`}>
-      <Card.Img variant="top" src={logo} alt={name} />
+    <Card className={`${styles.project} mb-4`}>
       <Card.Body>
-        <Card.Title>{name}</Card.Title>
-        <Card.Text>{description}</Card.Text>
+        <Card.Title className={`${styles.largeTitle} mb-4 mt-0`}>
+          {name}
+        </Card.Title>
+        <Card.Img variant="top" src={logo} alt={name} />
+        <Card.Text className={styles.description}>{description}</Card.Text>
         <div className={styles.middleSection}>
           <Button
             className={`${styles.button} mb-3`}
